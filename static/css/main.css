@@ -101,6 +101,7 @@ ul .dropdown-menu .ng-isolate-scope {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 50px;
 }
 
 footer>p {
@@ -117,11 +118,12 @@ footer>p {
 }
 
 .sidebar a {
-    color: #201e1c;
+    color: #dee4ee;
 }
 
 .sidebar a:hover {
-    color: #201e1c;
+    color: #dee4ee;
+    background-color: #333a48;
 }
 
 .api_heading {
@@ -703,7 +705,12 @@ table.dataTable {
 
 .nav-sidebar>li.active>a:focus,
 .nav-sidebar>li.active>a:hover {
-    background-color: #37485a;
+    background-color: #333a48;
+}
+
+.nav>li>a:focus,.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #333a48;
 }
 
 .nav-badge {

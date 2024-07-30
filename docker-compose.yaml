@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  gophish:
+    build: .
+    ports:
+      - "3333:3333"
+      - "8080:8080"
+      - "8443:8443"
+      - "80:80"
+    volumes:
+      - ./config.json:/opt/gophish/config.json
+      - ./templates:/opt/gophish/templates
+      - ./static:/opt/gophish/static
+    command: ["./docker/run.sh"]
